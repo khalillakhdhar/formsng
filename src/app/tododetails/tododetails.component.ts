@@ -17,6 +17,14 @@ constructor(private route:ActivatedRoute,private todoService:TodoService) // act
   //  le constructeur est appelé une seule fois lors de la création du composant (avant le chargement de la variable id)
   this.tache=this.todoService.getTodoById(parseInt(this.id|| "-1"));
 }
+deleteTache()
+{
+  if(confirm("Voulez-vous vraiment supprimer cette tâche ?"))
+    {
+  this.todoService.deleteTodo(parseInt(this.id|| "-1"));
+  window.location.href="/accueil";
+    }
+}
 
 
 }
