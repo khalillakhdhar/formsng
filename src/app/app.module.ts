@@ -7,13 +7,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodoComponent } from './todo/todo.component';
 import { TododetailsComponent } from './tododetails/tododetails.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoComponent,
     TododetailsComponent,
-    AddTodoComponent
+    AddTodoComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

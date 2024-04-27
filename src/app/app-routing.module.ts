@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SkillsComponent } from './skills/skills.component';
 import { TodoComponent } from './todo/todo.component';
 import { TododetailsComponent } from './tododetails/tododetails.component';
 
@@ -9,6 +10,7 @@ const routes: Routes = [
   {path:'accueil',component:TodoComponent},
   // routage vers la page de détail
   { path: 'detail/:id', component: TododetailsComponent },
+  {path:"skills",component:SkillsComponent}
 ];
 
 @NgModule({
