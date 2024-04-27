@@ -1,1 +1,32 @@
-<p>todo works!</p>
+<app-add-todo></app-add-todo>
+<div *ngIf="todos.length>0">
+<h2>Liste des taches</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Titre</th>
+            <th>Description</th>
+            <th>Date de debut</th>
+            <th>Date de fin</th>
+            <th>Lieu</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let todo of todos; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{todo.titre}}</td>
+            <td>{{todo.description}}</td>
+            <td>{{todo.datedebut}}</td>
+            <td>{{todo.datefin}}</td>
+            <td>{{todo.lieu}}</td>
+            <td>
+                <a [routerLink]="['../detail', i]">Details</a> <!-- url=> detail/i-->
+            </td>
+        </tr>
+    </tbody>
+</table></div>
+<div *ngIf="todos.length==0">
+    <h3>Aucune tache planifié</h3>
+</div>

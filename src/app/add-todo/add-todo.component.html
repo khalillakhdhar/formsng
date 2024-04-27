@@ -1,0 +1,38 @@
+<form (submit)="addTodo()">
+<h2>Ajout d'une tache</h2>
+<div class="mb-3">
+    <label class="form-label">Titre</label>
+</div>
+<div class="mb-3">
+    <input type="text" name="titre" [(ngModel)]="todo.titre" class="form-control" placeholder="Titre">
+</div>
+<div class="mb-3">
+    <label class="form-label">description</label>
+</div>
+<div class="mb-3">
+    <textarea name="description" [(ngModel)]="todo.description" placeholder="description" class="form-control"></textarea>
+
+</div>
+<div class="mb-3">
+    <label class="form-label">Date de debut</label>
+</div>
+<div class="mb-3">
+    <input type="datetime-local" [(ngModel)]="todo.datedebut" name="date_debut" class="form-control" >
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Date de fin</label>
+</div>
+<div class="mb-3">
+    <input type="datetime-local" [(ngModel)]="todo.datefin" name="date_fin" class="form-control" >
+</div>
+<div class="mb-3">
+    <label class="form-label">Lieu</label>
+</div>
+<div class="mb-3">
+    <input type="text" [(ngModel)]="todo.lieu" name="lieu" class="form-control" >
+</div>
+<div class="mb-3">
+    <button class="btn btn-primary">Ajouter</button>
+</div>
+</form>
