@@ -15,7 +15,7 @@
                 <button class="btn btn-primary" (click)="divisibilite()">Vérifier divisibilité</button>
 
             </div>
-            <span [ngClass]="{'badge bg-success': divisibilite()==true,'badge bg-danger': divisibilite()==false}">
-                {{ divisibilite()==true? 'Divisible': 'Non divisible'}}</span> 
+            <span [ngClass]="{'badge bg-success': etat==true,'badge bg-danger': etat==false}">
+                {{ divisibile}}</span> 
           
 </form>
