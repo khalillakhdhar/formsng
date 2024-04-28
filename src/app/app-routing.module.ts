@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DivisionComponent } from './division/division.component';
 import { ImcComponent } from './imc/imc.component';
 import { SkillsComponent } from './skills/skills.component';
 import { TodoComponent } from './todo/todo.component';
@@ -12,7 +13,8 @@ const routes: Routes = [
   // routage vers la page de détail
   { path: 'detail/:id', component: TododetailsComponent },
   {path:"skills",component:SkillsComponent},
-  {path:"imc",component:ImcComponent}
+  {path:"imc",component:ImcComponent},
+  {path:"division",component:DivisionComponent}
 ];
 
 @NgModule({

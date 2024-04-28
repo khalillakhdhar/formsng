@@ -1,0 +1,21 @@
+<form>
+    <div class="mb-3">
+        <label class="form-label">Entier 1</label>
+    </div>
+    <div class="mb-3">
+        <input type="number" class="form-control" min="1" [(ngModel)]="a" name="entier1" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Entier 2</label>
+        </div>
+        <div class="mb-3">
+            <input type="number" class="form-control" min="1" [(ngModel)]="b" name="entier2" required>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary" (click)="divisibilite()">Vérifier divisibilité</button>
+
+            </div>
+            <span [ngClass]="{'badge bg-success': divisibilite()==true,'badge bg-danger': divisibilite()==false}">
+                {{ divisibilite()==true? 'Divisible': 'Non divisible'}}</span> 
+          
+</form>

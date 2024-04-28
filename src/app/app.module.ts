@@ -9,6 +9,7 @@ import { TodoComponent } from './todo/todo.component';
 import { TododetailsComponent } from './tododetails/tododetails.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ImcComponent } from './imc/imc.component';
+import { DivisionComponent } from './division/division.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ImcComponent } from './imc/imc.component';
     TododetailsComponent,
     AddTodoComponent,
     SkillsComponent,
-    ImcComponent
+    ImcComponent,
+    DivisionComponent
   ],
   imports: [
     BrowserModule,
