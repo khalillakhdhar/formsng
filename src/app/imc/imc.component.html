@@ -20,4 +20,14 @@
     <span *ngIf="interpretation=='idéale'" class="badge text-bg-primary">Normal</span>
     <span *ngIf="interpretation=='surpoids'" class="badge text-bg-warning">Surpoids</span>
     <span *ngIf="interpretation=='obésité'" class="badge text-bg-danger">Obésité</span>
+    <!-- ng style  selon l'interpretation-->
+    <div [ngStyle]="{'color': interpretation=='maigreur'?'orange':interpretation=='idéale'?'green':interpretation=='surpoids'?'orange':'red'}">
+        {{interpretation}}
+        </div>
+        <!-- ng class selon l'interpretation-->
+        <div [ngClass]="{'text-warning': interpretation=='maigreur','text-primary':interpretation=='idéale','text-dark':interpretation=='surpoids','text-danger':interpretation=='obésité'}">
+            {{interpretation}}
+            </div>
+
+
 </div>
