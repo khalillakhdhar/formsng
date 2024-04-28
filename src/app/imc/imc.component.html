@@ -1,0 +1,23 @@
+<div class="mb-3">
+    <label class="form-label">Poid (kg)</label>
+    </div>
+    <div class="mb-3">
+    <input type="number" class="form-control" min="10" [(ngModel)]="poids" name="poid" required>
+</div>
+<div class="mb-3">
+    <label class="form-label">Taille (m)</label>
+    </div>
+    <div class="mb-3">
+    <input type="number" class="form-control" min="1" [(ngModel)]="taille" name="poid" required>
+</div>
+<div class="mb-3">
+    <button class="btn btn-primary" (click)="interpretationIMC()">Calculer</button>
+</div>
+<div class="text-center">
+    <h2>IMC: {{imc}}</h2>
+   <!-- affichage colorié de l'interprétation selon la valeur de l'imc-->
+   <span *ngIf="interpretation=='maigreur'" class="badge text-bg-warning">Maigre</span>
+    <span *ngIf="interpretation=='idéale'" class="badge text-bg-primary">Normal</span>
+    <span *ngIf="interpretation=='surpoids'" class="badge text-bg-warning">Surpoids</span>
+    <span *ngIf="interpretation=='obésité'" class="badge text-bg-danger">Obésité</span>
+</div>

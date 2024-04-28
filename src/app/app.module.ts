@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { TodoComponent } from './todo/todo.component';
 import { TododetailsComponent } from './tododetails/tododetails.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ImcComponent } from './imc/imc.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SkillsComponent } from './skills/skills.component';
     TodoComponent,
     TododetailsComponent,
     AddTodoComponent,
-    SkillsComponent
+    SkillsComponent,
+    ImcComponent
   ],
   imports: [
     BrowserModule,
